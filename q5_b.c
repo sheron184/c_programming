@@ -26,7 +26,7 @@ int sort_array(int* arr[5]){
 int main(){
 	 int myArray[5];
 	 int sorted_arr[5];
-	 int i,query;
+	 int i,query,mid;
 	 int *p;
 	 bool found;
 	 found = false;
@@ -37,8 +37,9 @@ int main(){
   printf("Enter the number you want to search for = ");
   scanf("%d",&query);
   
-  sort_array(myArray);//i passed the array into a function to sort.i used pointers to get the sorted array. because there are no such way to return an array in c.
-  if(query>myArray[2]){
+   sort_array(myArray);//i passed the array into a function to sort.i used pointers to get the sorted array. because there are no such way to return an array in c.
+  	mid = 5/2;
+			if(query>myArray[mid]){
   		for(i=3;i<5;i++){
 		  	if(query == myArray[i]){
 	  				found = true;
