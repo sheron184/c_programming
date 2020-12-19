@@ -14,18 +14,16 @@ int main(){
 	   	break;
 	   }
    }
-   printf("i = %d \n",i);
+   
    if(i<5){
    		for(j=0;j<=5-i;j++){
 		   	myArray[i] = myArray[i+1];
 		   	i++;
 	    }
    }
-   printf("New array = {");
+   printf("New array => ");
    for(i=0;i<4;i++){
-   	printf("%d,",myArray[i]);
+   	printf("%d ",myArray[i]);
    }
-   printf("}");
-   
-   
+   printf("\n");
 }
